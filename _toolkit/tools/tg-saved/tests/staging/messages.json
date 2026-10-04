@@ -1,0 +1,78 @@
+{
+  "chat": "Saved Messages",
+  "count": 4,
+  "messages": [
+    {
+      "id": 102,
+      "day": "2025-06-02",
+      "date": "2025-06-02T09:52:00",
+      "source": "Agentic Weekly",
+      "text": "Разбор harness-подхода: как строится agent loop, где живут tools, MCP и как мультиагентная оркестрация влияет на стоимость.",
+      "media": [],
+      "score": 22,
+      "verdict": "relevant",
+      "confidence": "high",
+      "tags": [
+        "multi-agent",
+        "llm/harness",
+        "tools/mcp",
+        "orchestration"
+      ],
+      "hits": [
+        "agent",
+        "агент",
+        "мультиагент",
+        "harness",
+        "mcp",
+        "оркестрац"
+      ]
+    },
+    {
+      "id": 103,
+      "day": "2025-06-03",
+      "date": "2025-06-03T18:40:00",
+      "source": "Погода в Москве",
+      "text": "Завтра +24, дождь к вечеру.",
+      "media": [],
+      "score": 0,
+      "verdict": "out",
+      "confidence": "high",
+      "tags": [
+        "unclassified"
+      ],
+      "hits": []
+    },
+    {
+      "id": 104,
+      "day": "2025-06-04",
+      "date": "2025-06-04T10:45:00",
+      "source": "AI Заметки",
+      "text": "",
+      "media": [
+        "photos/photo_1@04-06-2026_12-05-00.jpg"
+      ],
+      "score": 0,
+      "verdict": "media-only",
+      "confidence": "manual",
+      "tags": [
+        "unclassified"
+      ],
+      "hits": []
+    },
+    {
+      "id": 105,
+      "day": "2025-06-05",
+      "date": "2025-06-05T07:00:00",
+      "source": "ChatGPT | Новости",
+      "text": "Промокод на подписку: скидка 30% по промокоду AI30, подписывайтесь на канал.",
+      "media": [],
+      "score": -12,
+      "verdict": "out",
+      "confidence": "high",
+      "tags": [
+        "unclassified"
+      ],
+      "hits": []
+    }
+  ]
+}

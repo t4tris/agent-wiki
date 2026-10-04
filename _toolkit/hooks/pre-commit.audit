@@ -1,0 +1,12 @@
+#!/bin/sh
+# Pre-commit: не даёт закоммитить состояние, где ломается связность вики.
+# Ставится из `_toolkit/hooks/` (копируется в .git/hooks/pre-commit).
+#
+# Сам хук больше не содержит цепочку: она живёт в `_toolkit/tasks.py` (задача `check`),
+# чтобы её можно было запустить осознанно и целиком, а не читать четырнадцать шагов из bash.
+set -e
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+PY=python3
+command -v "$PY" >/dev/null 2>&1 || PY=python
+"$PY" _toolkit/tasks.py check

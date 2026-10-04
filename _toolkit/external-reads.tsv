@@ -1,0 +1,8 @@
+файл	образец	почему
+_toolkit/fetch_links_firecrawl.py	Roaming/npm	запасные пути поиска установленного CLI (который ищется через which)
+_toolkit/citation_ledger/_agent_home.py	Path.home()	домовое умолчание гроссбуха цитат; читается в load_ledger; явный путь и переменная — ответственность вызывающего
+_toolkit/tools/tg-saved/close_links_with_firecrawl.py	"npm", "firecrawl	те же запасные пути CLI другим написанием
+_toolkit/tools/tg-saved/compare_asr.py	os.environ.get("LOCALAPPDATA", ".")	каталог царапки под известным корнем; чтением данных не является
+_toolkit/tools/tg-saved/gigaam_long.py	os.environ.get("LOCALAPPDATA", ".")	каталог царапки под известным корнем; чтением данных не является
+_toolkit/tools/tg-saved/transcribe_dual.py	os.environ.get("LOCALAPPDATA", ".")	каталог царапки под известным корнем; чтением данных не является
+_toolkit/retell_metric.py	os.environ.get("LOCALAPPDATA", "/tmp")	каталог царапки под известным корнем; чтением данных не является

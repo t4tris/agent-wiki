@@ -1,0 +1,19 @@
+{
+  "contract_version": "1.0",
+  "kind": "<report kind, from the project's list>",
+  "items": [
+    {
+      "id": 0,
+      "source": "<identifier copied from the batch input, as a string>",
+      "field_required_by_contract": [],
+      "free_text": "empty means empty array or explicit 'нет', never null"
+    }
+  ],
+  "failures": [
+    {
+      "what": "what could not be read",
+      "reason": "why",
+      "retry_by_parent": true
+    }
+  ]
+}

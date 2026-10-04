@@ -1,0 +1,11 @@
+{
+  "fixture-report": {
+    "item": {"value": "str"},
+    "required": ["value"]
+  },
+  "lint-eye": {
+    "item": {"file": "str", "line": "int", "quote": "str", "why": "str", "evidence": "str"},
+    "required": ["file", "line", "quote", "why", "evidence"],
+    "items_alias": "findings"
+  }
+}

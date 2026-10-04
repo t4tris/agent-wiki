@@ -1,0 +1,14 @@
+#!/bin/sh
+# Проверка типа коммита: история знаний должна читаться по префиксам.
+MSG_FILE="$1"
+PREFIX=$(head -1 "$MSG_FILE" | sed -n 's/^\([a-z-]*\):.*/\1/p')
+ALLOWED="ingest update lint promote verify audit add fix docs remove archive"
+if [ -z "$PREFIX" ]; then
+  echo "commit-msg: нет типа в начале сообщения. Допустимые типы: $ALLOWED"
+  echo "commit-msg: пример — 'update: правка провенанса на странице X'"
+  exit 1
+fi
+case " $ALLOWED " in
+  *" $PREFIX "*) : ;;
+  *) echo "commit-msg: тип '$PREFIX' вне конвенции. Допустимые: $ALLOWED"; exit 1 ;;
+esac

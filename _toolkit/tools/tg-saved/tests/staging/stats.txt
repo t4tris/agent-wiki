@@ -1,0 +1,8 @@
+chat: Saved Messages
+total_messages: 4
+skipped_service: 1
+candidates: 2
+relevant: 1
+borderline: 0
+media_only: 1
+out: 2

@@ -1,0 +1,4 @@
+num,approve,date,source,verdict,confidence,tags,chars,id,preview
+1,,2025-06-02,Agentic Weekly,relevant,high,multi-agent llm/harness tools/mcp orchestration,123,102,"Разбор harness-подхода: как строится agent loop, где живут tools, MCP и как мультиагентная оркестрация влияет на стоимость."
+2,,2025-06-04,AI Заметки,media-only,manual,unclassified,0,104,
+3,no,2025-06-03,Погода в Москве,service,high,,24,103,"Завтра +24, дождь к вечеру."

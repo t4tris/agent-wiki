@@ -1,0 +1,19 @@
+target-version = "py311"
+line-length = 120
+respect-gitignore = true
+include = ["_toolkit/**/*.py", "_staging/**/*.py"]
+extend-exclude = [".venv", ".venv-asr", ".mypy_cache", ".ruff_cache", "_tools", "_staging/local", "_staging/telegram"]
+
+[lint]
+select = [
+    "E9",
+    "F63",
+    "F7",
+    "F811",
+    "F821",
+    "B023",
+    "S110",
+    "S112",
+    "PLW1510",
+    "BLE001",
+]

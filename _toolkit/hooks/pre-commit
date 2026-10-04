@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+PY=.venv/Scripts/python.exe
+if [ ! -x "$PY" ]; then
+    PY=python3
+fi
+"$PY" -m ruff check .
+"$PY" -m mypy _toolkit/tools/tg-saved

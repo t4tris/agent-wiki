@@ -1,0 +1,9 @@
+{
+  "format": 1,
+  "mechanism_revision": "initial",
+  "mechanism_dirty": false,
+  "source": "https://github.com/t4tris/agent-wiki",
+  "upstream": "https://github.com/t4tris/agent-wiki",
+  "updated": "2026-10-04",
+  "update_command": "python3 _toolkit/update.py --source <path-to-mechanism>"
+}
