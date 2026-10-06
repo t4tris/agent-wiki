@@ -801,7 +801,6 @@ EMERGENT = (
     "_staging/candidate-decisions.tsv", "_staging/registry-rows-decisions.tsv", "_staging/cards-registry.json",
     "_staging/sources-registry.json", "_staging/tools-registry.json", "_staging/waves.json", "_staging/bridge.md",
     "_staging/project-map.md", "_staging/project-map.html", "wiki/sources/",
-    "public_github_publish_0daed660.plan.md",
     "wiki/concepts", "wiki/entities", "wiki/comparisons", "wiki/queries",
     "wiki/concepts/", "wiki/entities/", "wiki/comparisons/", "wiki/queries/",
     "wiki/_meta", "wiki/_meta/",

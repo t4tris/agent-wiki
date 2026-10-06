@@ -7,7 +7,8 @@
     python3 _toolkit/tools/tg-saved/tg_saved.py --source "<id|часть названия>" --out out
 
 Креды берутся из creds.json (рядом со скриптом) или из --api-id/--api-hash.
-Прокси по умолчанию http://127.0.0.1:12334 (Outline VPN), можно задать --proxy.
+Прокси (если нужен) задаётся --proxy или переменной окружения TG_PROXY; порт у каждой машины свой, поэтому
+умолчания в коде нет — без него подключение прямое.
 """
 import argparse
 import asyncio
@@ -29,7 +30,6 @@ from telethon.tl.types import (  # type: ignore[import-untyped]
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SESSION = os.path.join(HERE, "tg_saved")
-DEFAULT_PROXY = "http://127.0.0.1:12334"
 
 
 def parse_proxy(value):
@@ -191,7 +191,7 @@ async def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--api-id")
     ap.add_argument("--api-hash")
-    ap.add_argument("--proxy", default=os.environ.get("TG_PROXY", DEFAULT_PROXY))
+    ap.add_argument("--proxy", default=os.environ.get("TG_PROXY"))
     ap.add_argument("--phone", default=os.environ.get("TG_PHONE"))
     ap.add_argument("--list", action="store_true", help="показать источники сохранённых сообщений")
     ap.add_argument("--source", help="id источника (channel:123 / user:45) или часть названия")
